@@ -1,0 +1,43 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Ring Kebab",
+      "ingredients": [
+        "500 grams minced meat",
+        "1 teaspoon salt",
+        "Half teaspoon black pepper",
+        "3 eggplants",
+        "3 potatoes"
+      ],
+      "preparation": "Peel the eggplants with a zester and slice them half a finger wide. Then add salt to a bowl of water, stir, and soak the eggplants in water for 20 minutes to remove their bitterness. Slice the peeled onions in a circular shape.",
+      "url": "https://www.nefisyemektarifleri.com/video/halka-kebabi/"
+    },
+    {
+      "id": "2",
+      "title": "Stuffed Eggplant Dish",
+      "ingredients": [
+        "6 small eggplants",
+        "3 green peppers",
+        "2 medium onions",
+        "2 tomatoes",
+        "2 green peppers"
+      ],
+      "preparation": "Peel the eggplants in stripes and soak them in salty water for half an hour to prevent them from absorbing oil. After washing thoroughly, drain the water with a towel and fry them in a little oil. Fry 3 peppers in oil as well. Then sauté the chopped onions in the same pan, add the minced meat and sauté for a while. Add the peppers and garlic and sauté for another 2 minutes.",
+      "url": "https://www.nefisyemektarifleri.com/video/karniyarik-yemegi-videosu/"
+    },
+    {
+      "id": "3",
+      "title": "Chicken Sultan Kebab",
+      "ingredients": [
+        "2 sheets of phyllo dough",
+        "400g chicken breast",
+        "400g chicken thighs",
+        "1 onion",
+        "1 tablespoon tomato paste"
+      ],
+      "preparation": "Peel and dice the eggplant, then fry it in vegetable oil. Place it in a strainer and let it drain. In the meantime, sauté the chicken. Dice the chicken into bite-sized pieces and cook in a pot, stirring occasionally. When it changes color and releases its juice, add the finely chopped onion.",
+      "url": "https://www.nefisyemektarifleri.com/tavuklu-sultan-kebabi-tarifi/"
+    }
+  ]
+}
