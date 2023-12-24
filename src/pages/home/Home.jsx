@@ -1,23 +1,19 @@
-import React, { useState, useEffect } from 'react';
 import './Home.css';
 import ProductCard from '../../components/ProductCard';
+import useFetch from '../../hooks/useFetch';
 
 function Home() {
-    const [recipes, setRecipes] = useState(null);
+    const { recipe: recipes, error } = useFetch('http://localhost:3001/recipes');
 
-    useEffect(() => {
-        fetch('http://localhost:3001/recipes')
-            .then(res => res.json())
-            .then(data => setRecipes(data))
-            .catch(error => console.error('Error fetching recipes:', error));
-    }, []);
+    if (error) {
+        return <div>Error fetching recipes: {error}</div>;
+    }
 
     return (
         <div className="row mt-3">
             {recipes && recipes.map(recipe => (
-                <ProductCard recipe={recipe} key={recipe.id} />
-            ))
-            }
+                <ProductCard data={recipe} key={recipe.id} />
+            ))}
         </div>
     );
 }
