@@ -3,6 +3,7 @@
     {
       "id": "1",
       "title": "Ring Kebab",
+      "explanation": "Indulge in the flavors of the Ring Kebab a culinary delight!",
       "ingredients": [
         "500 grams minced meat",
         "1 teaspoon salt",
@@ -11,11 +12,13 @@
         "3 potatoes"
       ],
       "preparation": "Peel the eggplants with a zester and slice them half a finger wide. Then add salt to a bowl of water, stir, and soak the eggplants in water for 20 minutes to remove their bitterness. Slice the peeled onions in a circular shape.",
+      "image": "RingKebab.jpg",
       "url": "https://www.nefisyemektarifleri.com/video/halka-kebabi/"
     },
     {
       "id": "2",
       "title": "Stuffed Eggplant Dish",
+      "explanation": "Savor the richness of the Stuffed, a culinary delight!",
       "ingredients": [
         "6 small eggplants",
         "3 green peppers",
@@ -24,11 +27,13 @@
         "2 green peppers"
       ],
       "preparation": "Peel the eggplants in stripes and soak them in salty water for half an hour to prevent them from absorbing oil. After washing thoroughly, drain the water with a towel and fry them in a little oil. Fry 3 peppers in oil as well. Then sauté the chopped onions in the same pan, add the minced meat and sauté for a while. Add the peppers and garlic and sauté for another 2 minutes.",
+      "image": "StuffedEggplantDish.jpg",
       "url": "https://www.nefisyemektarifleri.com/video/karniyarik-yemegi-videosu/"
     },
     {
       "id": "3",
       "title": "Chicken Sultan Kebab",
+      "explanation": "Get ready to taste the delicious Chicken Sultan Kebab!",
       "ingredients": [
         "2 sheets of phyllo dough",
         "400g chicken breast",
@@ -37,7 +42,53 @@
         "1 tablespoon tomato paste"
       ],
       "preparation": "Peel and dice the eggplant, then fry it in vegetable oil. Place it in a strainer and let it drain. In the meantime, sauté the chicken. Dice the chicken into bite-sized pieces and cook in a pot, stirring occasionally. When it changes color and releases its juice, add the finely chopped onion.",
+      "image": "ChickenSultanKebab.jpg",
       "url": "https://www.nefisyemektarifleri.com/tavuklu-sultan-kebabi-tarifi/"
+    },
+    {
+      "id": "4",
+      "title": "Mouthwatering Pizza",
+      "explanation": "Experience the flavors in our Mouthwatering Pizza!",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1 teaspoon yeast",
+        "1 teaspoon sugar",
+        "1/2 cup tomato sauce",
+        "1 cup mozzarella cheese"
+      ],
+      "preparation": "Mix the flour, yeast, and sugar. Add water to make a dough. Roll out the dough, spread tomato sauce, and sprinkle cheese. Bake until golden brown.",
+      "image": "MouthwateringPizza.jpg",
+      "url": "https://www.nefisyemektarifleri.com/nefis-kahvalti-pizzasi-8111409/"
+    },
+    {
+      "id": "5",
+      "title": "Refreshing Fruit Salad",
+      "explanation": "Delight in the freshness of our Refreshing Fruit Salad!",
+      "ingredients": [
+        "1 cup strawberries",
+        "1 cup pineapple chunks",
+        "1 cup watermelon cubes",
+        "1 cup grapes",
+        "Mint leaves for garnish"
+      ],
+      "preparation": "Combine all fruits in a bowl. Garnish with mint leaves. Toss gently and refrigerate before serving.",
+      "image": "RefreshingFruitSalad.jpg",
+      "url": "https://www.nefisyemektarifleri.com/meyve-salatasi-478493/"
+    },
+    {
+      "id": "6",
+      "title": "Choco Lava Cake",
+      "explanation": "Indulge your sweet tooth with our decadent Choco Lava Cake!",
+      "ingredients": [
+        "1/2 cup butter",
+        "1/2 cup dark chocolate",
+        "1/4 cup all-purpose flour",
+        "1/2 cup powdered sugar",
+        "2 eggs"
+      ],
+      "preparation": "Melt butter and chocolate. Mix with flour, sugar, and eggs. Bake until the center is gooey. Serve warm.",
+      "image": "ChocoLavaCake.jpg",
+      "url": "https://www.nefisyemektarifleri.com/video/cikolatali-kek-tarifi/"
     }
   ]
 }
