@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom"
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
             <div className="container">
                 <Link className="navbar-brand" to="/">Recipes</Link>
                 <ul className="navbar-nav">

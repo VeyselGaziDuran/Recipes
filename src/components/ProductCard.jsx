@@ -9,7 +9,7 @@ function ProductCard({ data }) {
                 <div className='card-body'>
                     <h5 className='card-title'>{data.title}</h5>
                     <p className='card-text'>{data.explanation}</p>
-                    <Link to={`/recipes/${data.id}`} className='btn btn-primary'>Go to recipe</Link>
+                    <Link to={`/recipes/${data.id}`} className='btn btn-warning text-light'>Go to recipe</Link>
                 </div>
             </div>
         </div>

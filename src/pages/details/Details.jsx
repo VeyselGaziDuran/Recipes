@@ -40,7 +40,7 @@ function Details() {
                         <div className="col-4">
                             <img src={`/img/${recipe.image}`} alt={recipe.title} className='img-fluid' />
                             <hr />
-                            <a href={recipe.url} className='btn btn-outline-primary'>Check out the recipe</a>
+                            <a href={recipe.url} className='btn btn-outline-warning'>Check out the recipe</a>
                         </div>
                         <div className='col-8'>
                             <h5>{recipe.title}</h5>
