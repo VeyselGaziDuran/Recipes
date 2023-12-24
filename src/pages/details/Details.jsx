@@ -5,16 +5,27 @@ import './Details.css';
 function Details() {
     const { id } = useParams();
     const [recipe, setRecipe] = useState(null);
+    const [isLoading, setIsLoading] = useState(true); // Eklenen kısım
     const url = "http://localhost:3001/recipes/" + id;
 
     useEffect(() => {
+        setIsLoading(true);
         fetch(url)
             .then(res => res.json())
-            .then(res => setRecipe(res))
+            .then(res => {
+                setRecipe(res);
+                setIsLoading(false);
+            })
+            .catch(error => {
+                console.error('Error fetching recipe:', error);
+                setIsLoading(false);
+            });
     }, [url]);
 
     return (
         <div className="row mt-3">
+            {isLoading && <p>Loading...</p>}
+
             {
                 recipe && (
                     <>

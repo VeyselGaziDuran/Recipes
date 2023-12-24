@@ -3,25 +3,34 @@ import { useState, useEffect } from 'react';
 const useFetch = (url) => {
     const [recipe, setRecipe] = useState(null);
     const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         let isMounted = true;
 
-        fetch(url)
-            .then(res => {
+        const fetchData = async () => {
+            try {
+                const res = await fetch(url);
+
                 if (!res.ok) {
                     throw new Error('Network response was not ok');
                 }
-                return res.json();
-            })
-            .then(data => {
+
+                const data = await res.json();
+
                 if (isMounted) {
                     setRecipe(data);
+                    setIsLoading(false);
                 }
-            })
-            .catch(err => {
-                setError(err.message);
-            });
+            } catch (err) {
+                if (isMounted) {
+                    setError(err.message);
+                    setIsLoading(false);
+                }
+            }
+        };
+
+        fetchData();
 
         return () => {
             isMounted = false;
@@ -30,7 +39,8 @@ const useFetch = (url) => {
 
     return {
         recipe,
-        error
+        error,
+        isLoading
     };
 }
 
