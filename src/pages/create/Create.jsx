@@ -46,7 +46,7 @@ function Create() {
     return (
         <div className="card mt-3">
             <div className="card-body">
-                <h2>Add New Recipe</h2>
+                <h3>Add New Recipe</h3>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="title" className="form-label">Title</label>
@@ -67,7 +67,7 @@ function Create() {
                         </label>
                         <div className="input-group">
                             <input type="text" ref={IngredientInput} className="form-control" name="ingredients" id="ingredients" value={ingredient} onChange={(e) => setIngredient(e.target.value)} />
-                            <button className="btn btn-warning" type="button" id="button-addon2" onClick={handleAddIngredient}>Add</button>
+                            <button className="btn btn-warning text-light" type="button" id="button-addon2" onClick={handleAddIngredient}>+</button>
                         </div>
                     </div>
                     <div className="mb-3">
@@ -83,7 +83,7 @@ function Create() {
                         <input type="text" className="form-control" name="url" id="url" value={url} onChange={(e) => setUrl(e.target.value)} />
                     </div>
 
-                    <button type="submit" className="btn btn-warning">
+                    <button type="submit" className="btn btn-warning text-light">
                         Add Recipe
                     </button>
                 </form>
