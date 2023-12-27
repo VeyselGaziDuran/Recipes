@@ -2,7 +2,7 @@
 
 Welcome to My Recipes App! This project was bootstrapped with [Vite](https://vitejs.dev/) and uses React.
 
-https://github.com/VeyselGaziDuran/Recipes/assets/81925500/574be5c4-2080-4db0-be16-8603b605d17c
+https://github.com/VeyselGaziDuran/Recipes/assets/81925500/abd0afe1-7746-487d-85bb-d96b17d465ef
 
 ## Getting Started
 
