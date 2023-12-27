@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = (url, method = "GET") => {
+const useFetch = (url, method = "GET", isRedirect = false) => {
     const [recipe, setRecipe] = useState(null);
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +30,9 @@ const useFetch = (url, method = "GET") => {
 
             setRecipe(data);
             setIsLoading(false);
+            if (isRedirect) {
+                window.location.href = '/';
+            }
         } catch (err) {
             setError(err.message);
             setIsLoading(false);

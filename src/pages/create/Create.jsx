@@ -13,7 +13,7 @@ function Create() {
     const [ingredient, setIngredient] = useState('');
     const IngredientInput = useRef(null);
 
-    const { postData } = useFetch('http://localhost:3001/recipes', 'POST'); // Bağlam parantezleri ekledim
+    const { postData } = useFetch('http://localhost:3001/recipes', 'POST', true); // Bağlam parantezleri ekledim
 
     const handleAddIngredient = (e) => {
         const item = ingredient.trim();
