@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import useFetch from '../../hooks/useFetch';
 
 import './Create.css';
 
@@ -11,6 +12,8 @@ function Create() {
     const [ingredients, setIngredients] = useState([]);
     const [ingredient, setIngredient] = useState('');
     const IngredientInput = useRef(null);
+
+    const { postData } = useFetch('http://localhost:3001/recipes', 'POST'); // Bağlam parantezleri ekledim
 
     const handleAddIngredient = (e) => {
         const item = ingredient.trim();
@@ -34,6 +37,8 @@ function Create() {
         const newRecipe = { title, explanation, preparation, image, url, ingredients };
         console.log(newRecipe);
 
+        postData(newRecipe);
+
         setTitle('');
         setExplanation('');
         setPreparation('');
@@ -42,6 +47,7 @@ function Create() {
         setIngredients([]);
         setIngredient('');
     };
+
 
     return (
         <div className="card mt-3">

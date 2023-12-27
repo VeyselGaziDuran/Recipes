@@ -1,47 +1,60 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = (url) => {
+const useFetch = (url, method = "GET") => {
     const [recipe, setRecipe] = useState(null);
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    const [options, setOptions] = useState(null);
+
+    const postData = async (data) => {
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        };
+
+        setOptions(requestOptions);
+    };
+
+    const fetchData = async (options) => {
+        try {
+            const res = await fetch(url, options);
+
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const data = await res.json();
+
+            setRecipe(data);
+            setIsLoading(false);
+        } catch (err) {
+            setError(err.message);
+            setIsLoading(false);
+        }
+    };
 
     useEffect(() => {
         let isMounted = true;
 
-        const fetchData = async () => {
-            try {
-                const res = await fetch(url);
-
-                if (!res.ok) {
-                    throw new Error('Network response was not ok');
-                }
-
-                const data = await res.json();
-
-                if (isMounted) {
-                    setRecipe(data);
-                    setIsLoading(false);
-                }
-            } catch (err) {
-                if (isMounted) {
-                    setError(err.message);
-                    setIsLoading(false);
-                }
-            }
-        };
-
-        fetchData();
+        if (method === "GET") {
+            fetchData(options);
+        }
 
         return () => {
             isMounted = false;
         };
-    }, [url]);
+    }, [url, options, method]);
 
-    return {
-        recipe,
-        error,
-        isLoading
-    };
+    useEffect(() => {
+        if (method === "POST" && options) {
+            fetchData(options);
+        }
+    }, [method, options]);
+
+    return { recipe, isLoading, error, postData };
 }
 
 export default useFetch;
