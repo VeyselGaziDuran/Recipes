@@ -1,8 +1,37 @@
-# React + Vite
+# Recipes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to My Recipes App! This project was bootstrapped with [Vite](https://vitejs.dev/) and uses React.
 
-Currently, two official plugins are available:
+[![ı](ıı "ı")](http://ıı "ı")
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+Follow the steps below to get started with the project.
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+
+### Installation
+
+### 1. Clone the repository:
+
+###### - git clone https://github.com/VeyselGaziDuran/Recipes.git
+
+### 2. Navigate to the project folder:
+
+###### - cd Recipes
+
+### 3. Install dependencies:
+
+###### - npm install
+
+### 4. Starting JSON Server:
+
+###### - json-server --watch data/db.json --port 3001
+
+### 5. Running the App
+
+###### - npm start
+
+Visit http://localhost:3000 in your browser to see the app.
